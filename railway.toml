@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+# Run Socket.IO + FastAPI ASGI app
+startCommand = "uvicorn server:socket_app --host 0.0.0.0 --port $PORT"
